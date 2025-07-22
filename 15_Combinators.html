@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <style>
+        /* 1.Descendant Selector  */
+        div p {
+            background-color: red;
+        }
+
+        /* 2. Child Selector */
+
+        div>p {
+            background-color: pink;
+        }
+
+        /* 3. Adjacent Sibling Selector */
+        div+p {
+            background-color: green;
+        }
+
+        /* 4. General Sibling Selector */
+        div~p {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <dl>
+        <dt>1.Descendant Selector </dt>
+        <dd>:- It selects all the elements present inside another specified HTML element.</dd>
+
+        <dt>2. Child Selector</dt>
+        <dd>:- It selects only the first generation descendants of a specified element.</dd>
+
+        <dt>3. Adjacent Sibling Selector</dt>
+        <dd>:- As the name suggests this selector only selects the adjacent element to the specified element.</dd>
+
+        <dt>4. General Sibling Selector</dt>
+        <dd>:- Unlike the adjacent selector, this one is going to select all the <p> tags present after
+            <div>.
+        </dd>
+    </dl>
+
+
+    <h1>CSS Combinators</h1>
+    <div>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <section>
+            <p>paragraph 3.</p>
+        </section>
+        <p>paragraph 4</p>
+    </div>
+    <p>paragraph 5</p>
+    <p>paragraph 6</p>
+</body>
+
+</html>

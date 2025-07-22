@@ -1,0 +1,99 @@
+** Font-Size **
+
+| Unit  | Description                 | Responsive?         | Common Use                                                     |
+| ----- | --------------------------- | ------------------- | -------------------------------------------------------------- |
+| `px`  | Pixels (absolute)           | ❌ Not responsive    | Precise control (not recommended for modern responsive design) |
+| `em`  | Relative to the parent      | ✅ Yes               | Buttons, headings inside sections                              |
+| `rem` | Relative to root `<html>`   | ✅ Best choice       | Base font size for the entire site                             |
+| `%`   | Relative to parent element  | ✅ Yes               | Rare for font-size, common in layout                           |
+| `vw`  | Relative to viewport width  | ✅ For fluid scaling | Large headings or full-page text                               |
+| `vh`  | Relative to viewport height | ✅                   | Rare for text, more for layout                                 |
+
+HV
+
+** Position **
+Static –   by defult prperty ,  no effect of top , bottom,left,right,z_index
+
+Relative - Apni orginal position se change hogi
+
+Absolute - apne parent ke relative position change hogi 
+(parent HTML bhi ho sakta hai yeee koi parent container(element)) bhi bana sakte hai bas position absoulte dai ne hai tag  create non-static parent container in (container position relative use to )
+
+Fixed - page mein position fixed hojaygi  ( browser kai hisab sai hogi)x	
+
+Sticky - page mein kahin bhi ho, scroll krne pr neeche nhi jaygi, stick hojaygi
+
+
+** Specifies **
+
+Specificity Calculation
+To calculate specificity, assign a value to each part of the selector:
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000
+
+** Disaply **
+
+        display: block;        /* Full width, starts on new line */
+        display: inline;       /* Flows within text, no width/height */
+        display: inline-block; /* Like inline, but supports width/height */
+        display: flex;         /* Enables Flexbox layout */
+        display: grid;         /* Enables Grid layout */
+        display: none;         /* Hides the element */
+
+
+** 2D Transform **
+ Translate :- transform element position along x or y or both direction.  moves an element from its current position
+Rotate :- Rotate Element clockwise
+ Scale :- Increace and Decreace size of a Element rescales the width and height 
+ Skew :- Given angles of x and y axis(khechvu)
+
+
+** Transitions **
+
+Transition:
+	
+        Transition-property:  transition-property: name of css property | all;
+
+
+        Transition-duration: transition-duration:  time duration(in second);
+	                Specifies the duration over which transitions should occur
+
+        Transition-timing-function:transition-timing-function: linear |ease| ease-in | ease-out | ease-in-out | cubic-bezier;
+                -specifies the speed curve of the transition effect
+
+        Transition-delay:   
+		transition-delay: time duration(in second);
+                        time a property is changed and the transition actually begins
+
+
+	transition: property |  duration  timing-function | delay;
+
+
+
+** Animation **
+
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation-name: name;
+            animation-duration: Animation complete thava mate keto time (sec) ;
+            animation-timing-function: (speed);
+            animation-delay: starting time animation(sec);
+            animation-iteration-count: count hiw many time animation;
+            animation-direction: normal/reverse; 
+            animation-play-state: paused/running;*/
+
+
+** SHADOW **
+
+h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+
+blur: The larger the value, the blurrier the shadow.
+
+spread: Expands or shrinks the shadow size.
+
+color: Defines the shadow color.
+
+inset: Makes the shadow inner.

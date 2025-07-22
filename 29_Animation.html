@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        div {
+            background-color: red;
+            color: pink;
+            width: 200px;
+            height: 200px;
+            animation: background_change 5s linear 1s infinite;
+        }
+
+        @keyframes background_change {
+            0% {
+                background-color: pink;
+            }
+
+            25% {
+                background-color: rebeccapurple;
+            }
+
+            50% {
+                background-color: palegreen;
+            }
+
+            75% {
+                background-color: gold;
+            }
+
+            100% {
+                background-color: darkcyan;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>H</div>
+</body>
+
+</html>

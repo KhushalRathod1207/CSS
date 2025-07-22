@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            background-color: pink;
+            color: firebrick;
+            border: 2px solid black;
+        }
+
+        /* Translate :- transform element position along x or y or both direction. */
+        /* moves an element from its current position */
+        .box:hover {
+            transform: translate(10px, 20px);
+        }
+
+        /* Rotate :- Rotate Element clockwise */
+        .box:hover {
+            transform: rotate(20deg);
+        }
+
+        /* Scale :- Increace and Decreace size of a Element rescales the width and height  */
+        .box:hover {
+            transform: scale(1.4, 1.2);
+        }
+
+        /* Skew :- Given angles of x and y axis(khechvu) */
+        .box:hover {
+            transform: skew(100deg, 50deg);
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+        translate(Value(px), Value(px)) moves an element from its current position
+ 
+        rotate(Value(deg-turn)) rotates an element clockwise
+		rotatex(Value(deg-turn))
+		rotatey(Value(deg-turn))
+        scale(Value, Value) increases or decreases the size(moti) of an element
+        skew(Value(deg), Value(deg)) 
+            method skews an element along the X and Y-axis by the given angles(khechvu).
+
+    </pre>
+
+    <div class="box">Hello</div>
+</body>
+
+</html>
